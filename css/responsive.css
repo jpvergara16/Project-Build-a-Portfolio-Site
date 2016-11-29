@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+/* Flexbox Properties */
+.logo {width:100%; order:1}
+.name {width:100%; order:2}
+.image-main {width:100%; order:3}
+.app1 {width:100%; order:5}
+.app2 {width:100%; order:6}
+.app3 {width:100%; order:7}
+footer {width:100%; order:8}
+
+@media screen and (min-width:470px){
+  .logo {width:30%; order:1}
+  .name {width:70%; order:2; text-align:right;}
+}
+
+@media screen and (min-width:670px){
+  .app1 {width:50%; order:6}
+  .app2 {width:50%; order:5}
+  .app3 {width:50%; order:7}
+  h2 {text-align: left}
+  .contact {float:left}
+  .ficon{width:10%;}
+}
+
+@media screen and (min-width:900px){
+  .app1 {width:33%; order:7}
+  .app2 {width:33%; order:6}
+  .app3 {width:33%; order:5}
+}

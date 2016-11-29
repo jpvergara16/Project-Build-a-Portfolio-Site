@@ -1,0 +1,31 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background-color;
+  text-align: center;
+}
+
+img, embed, object, video {
+  max-width:100%;
+}
+
+.name, .logo {
+  text-transform: uppercase;
+}
+
+.image-main {
+  border-top: 3px solid #7d97ad;
+  padding-top: 15px;
+}
+
+footer {
+  color: white;
+  background-color: #7d97ad;
+}
+
+.ficon {
+  display: inline-block;
+  padding:5px;
+  float: inherit;
+  font-size: 50px;
+  position: relative;
+}
