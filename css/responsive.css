@@ -2,28 +2,44 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width:1250px;
+  width: calc(100% - 10px);
   margin:auto;
 }
-/* Flexbox Properties */
-.logo {width:100%; order:1}
-.name {width:100%; order:2}
-.image-main {width:100%; order:3}
-.app1 {width:100%; order:5}
-.app2 {width:100%; order:6}
-.app3 {width:100%; order:7}
-footer {width:100%; order:8}
 
+/* Flexbox Properties */
+header {
+  width:100%; order:1
+}
+.image-main {
+  width:100%; order:3
+}
+.featured-line {
+  width:100%; order:4
+}
+.app1 {
+  width:100%; order:5
+}
+.app2 {
+  width:100%; order:6
+}
+.app3 {
+  width:100%; order:7
+}
+footer {
+  width:100%; order:8
+}
+
+/* Media Queries for Responsiveness*/
 @media screen and (min-width:470px){
-  .logo {width:30%; order:1}
-  .name {width:70%; order:2; text-align:right;}
+  .logo {width:30%; order:1; float:left}
+  .name {width:70%; order:2; text-align:right; float:right}
 }
 
 @media screen and (min-width:670px){
   .app1 {width:50%; order:6}
   .app2 {width:50%; order:5}
   .app3 {width:50%; order:7}
-  h2 {text-align: left}
+  h2 {text-align:left}
   .contact {float:left}
   .ficon{width:10%;}
 }

@@ -1,17 +1,23 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   background-color;
   text-align: center;
 }
 
-img, embed, object, video {
+p {
+  font-size: 1.2em;
+}
+
+img,
+embed,
+object,
+video {
   max-width:100%;
 }
 
-.name, .logo {
+header {
   text-transform: uppercase;
 }
-
 
 .image-main {
   border-top: 3px solid #7d97ad;

@@ -11,29 +11,41 @@
 </head>
 <body>
   <div class="container">
+
+    <header>
       <div class="logo">
         <!-- Logo is 150x150  -->
           <img src="images/Logo1-red.png" alt="Logo for JV">
       </div>
+
       <div class="name">
         <h1>Julius Vergara</h1>
         <h4>Front End Developer</h4>
       </div>
+    </header>
+
     <div class="image-main">
       <!-- Main Image 1140 x 300 -->
-        <picture>
-          <source
-            media="(min-width:600px)"
-            srcset="images_src/image-main.jpg">
-          <source
-            media="(min-width:470px)"
-            srcset="images/image-main-medium.jpg">
-          <img src="images/image-main-small.jpg" alt="The Developer Himself">
-        </picture>
+      <picture>
+        <source
+          media="(min-width:600px)"
+          srcset="images_src/image-main.jpg">
+        <source
+          media="(min-width:470px)"
+          srcset="images/image-main-medium.jpg">
+        <img src="images/image-main-small.jpg" alt="The Developer Himself">
+      </picture>
+      <p>
+        Hello, I'm Julius Vergara, a practicing front end developer and UX designer interested in developing E-Commerce platforms and creating new and more efficient of user interfaces. Here are some of my main resources for my study and my online resume. Check it out!
+      </p>
+    </div>
+
+    <div class="featured-line">
       <h2>Featured Work</h2>
     </div>
+
     <!-- Each app image is 350x150 -->
-    <div class="app1">
+    <article class="app1">
       <picture>
         <source
           media="(min-width:600px)"
@@ -42,10 +54,11 @@
           media="(min-width:470px)"
           srcset="images/Resume-medium.png">
         <img src="images/Resume-small.png" alt="Current Resume">
-        </picture>
-        <h3>LinkedIn Resume</h3>
-    </div>
-    <div class="app2">
+      </picture>
+      <h3>LinkedIn Resume</h3>
+    </article>
+
+    <article class="app2">
       <picture>
         <source
           media="(min-width:600px)"
@@ -55,9 +68,10 @@
           srcset="images/WebDev-medium.png">
         <img src="images/WebDev-small.png" alt="Current Web Development Platform">
       </picture>
-        <h3>Udacity Front End Web Development Nanodegree</h3>
-    </div>
-    <div class="app3">
+      <h3>Udacity Front End Web Development Nanodegree</h3>
+    </article>
+
+    <article class="app3">
       <picture>
         <source
           media="(min-width:600px)"
@@ -66,9 +80,10 @@
           media="(min-width:470px)"
           srcset="images/Springboard-medium.png">
         <img src="images/Springboard-small.png" alt="Springboard: UX Design Online Study">
-       </picture>
-        <h3>Springboard: A UX Design Learning Path</h3>
-    </div>
+      </picture>
+      <h3>Springboard: A UX Design Learning Path</h3>
+    </article>
+
     <footer>
       <div class="contact">
         <h2>Contact Info</h2>
@@ -92,6 +107,7 @@
         <i class="fa fa-instagram" aria-hidden="true"></i>
       </div>
     </footer>
+
   </div>
 </body>
 </html>
