@@ -13,7 +13,7 @@
   <div class="container">
       <div class="logo">
         <!-- Logo is 150x150  -->
-        <img src="images/Logo1.png" alt="Logo for JV">
+          <img src="images/Logo1-red.png" alt="Logo for JV">
       </div>
       <div class="name">
         <h1>Julius Vergara</h1>
@@ -21,20 +21,50 @@
       </div>
     <div class="image-main">
       <!-- Main Image 1140 x 300 -->
-      <img src="file:///Users/JP/Desktop/UDACITY/Project-Build-A-Portfolio-Site/images/image-main.jpg">
+        <picture>
+          <source
+            media="(min-width:600px)"
+            srcset="images_src/image-main.jpg">
+          <source
+            media="(min-width:470px)"
+            srcset="images/image-main-medium.jpg">
+          <img src="images/image-main-small.jpg" alt="The Developer Himself">
+        </picture>
       <h2>Featured Work</h2>
     </div>
     <!-- Each app image is 350x150 -->
     <div class="app1">
-        <img src="file:///Users/JP/Desktop/UDACITY/Project-Build-A-Portfolio-Site/images/Resume.png" alt="Current Resume">
+      <picture>
+        <source
+          media="(min-width:600px)"
+          srcset="images_src/Resume.png">
+        <source
+          media="(min-width:470px)"
+          srcset="images/Resume-medium.png">
+        <img src="images/Resume-small.png" alt="Current Resume">
         <h3>LinkedIn Resume</h3>
     </div>
     <div class="app2">
-        <img src="file:///Users/JP/Desktop/UDACITY/Project-Build-A-Portfolio-Site/images/WebDev.png" alt="Current Web Development Platform">
+      <picture>
+        <source
+          media="(min-width:600px)"
+          srcset="images_src/WebDev.png">
+        <source
+          media="(min-width:470px)"
+          srcset="images/WebDev-medium.png">
+        <img src="images/WebDev-small.png" alt="Current Web Development Platform">
+      </picture>
         <h3>Udacity Front End Web Development Nanodegree</h3>
     </div>
     <div class="app3">
-        <img src="file:///Users/JP/Desktop/UDACITY/Project-Build-A-Portfolio-Site/images/Springboard.png" alt="Springboard: UX Design Online Study">
+      <picture>
+        <source
+          media="(min-width:600px)"
+          srcset="images_src/Springboard.png">
+        <source
+          media="(min-width:470px)"
+          srcset="images/Springboard-medium.png">
+        <img src="images/Springboard-small.png" alt="Springboard: UX Design Online Study">
         <h3>Springboard: A UX Design Learning Path</h3>
     </div>
     <footer>

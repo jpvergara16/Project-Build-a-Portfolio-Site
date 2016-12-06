@@ -2,6 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  max-width:1250px;
+  margin:auto;
 }
 /* Flexbox Properties */
 .logo {width:100%; order:1}

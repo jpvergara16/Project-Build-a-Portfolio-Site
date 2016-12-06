@@ -12,6 +12,7 @@ img, embed, object, video {
   text-transform: uppercase;
 }
 
+
 .image-main {
   border-top: 3px solid #7d97ad;
   padding-top: 15px;
@@ -26,6 +27,6 @@ footer {
   display: inline-block;
   padding:5px;
   float: inherit;
-  font-size: 50px;
+  font-size: 45px;
   position: relative;
 }

@@ -18,7 +18,7 @@ module.exports = function(grunt) {
                 width: 1140,
                 separator: "-",
                 suffix: "_x2",
-                quality: 0.6
+                quality: 60
               }]
             },
             files: [{
@@ -34,16 +34,29 @@ module.exports = function(grunt) {
             files: [{
               expand: true,
               src: ['**/*', '!app/img/**/*.*'],
-              cwd: 'src/',
-              dest: 'dist/'
+              cwd: 'images_src/',
+              dest: 'images/'
             }]
+          }
+        },
+        image_resize: {
+          no_overwrite: {
+            options: {
+              width: 150,
+              height: 150,
+              overwrite: false,
+            },
+            files: {
+               'images/Logo1-red.png': 'images_src/Logo1.png'
+             }
           }
         }
       });
 
       grunt.loadNpmTasks('grunt-contrib-copy');
       grunt.loadNpmTasks('grunt-responsive-images');
+      grunt.loadNpmTasks('grunt-image-resize');
 
-      grunt.registerTask('default',['copy', 'responsive_images']);
+      grunt.registerTask('default',['copy', 'responsive_images', 'image_resize']);
 
     };
